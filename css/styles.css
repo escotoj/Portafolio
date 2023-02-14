@@ -48,7 +48,9 @@ nav a {
 
 /* add a hover element */
 nav a:hover {
-  background-color: var(--light);
+  background-color: violet;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .subject {
@@ -77,7 +79,7 @@ footer {
   margin-top: auto;
 }
 
-.products {
+.field {
   flex: 1;
   background-color: rgb(173, 137, 251);
   padding: 50px;
@@ -86,16 +88,15 @@ footer {
   justify-content: space-evenly;
 }
 
-.card {
+.skills {
   border-style: solid;
   background-color: rgb(255, 255, 255);
   border-width: 5px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 30px;
   flex: 0 0 300px;
   transform: scale(1.2);
-  margin: 20px;
-  
+  margin: 50px;
 }
 
 .card-2 {
@@ -110,17 +111,17 @@ footer {
   }
 
 
-.card > header {
+.skills > header {
   border-radius: 50px 50px 0px 0px;
   padding: 20px;
   font-family:'Times New Roman', Times, serif
 }
 
-.card > p {
+.skills > p {
   text-align: center;
 }
 
-.card > img {
+.skills > img {
   width: 100%;
 }
 
