@@ -32,14 +32,23 @@ header {
   text-align: center;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+
+
 nav {
-  border-style: solid;
-  font-size: 1.5rem;
+  border-style:double;
+  font-size: 1.25rem;
   background-color: rgb(255, 255, 255);
   border-width: 5px;
   border-radius: 5px;
   text-align: center; 
-  padding: 10px;
 
 }
 
@@ -51,6 +60,12 @@ nav a {
   
 }
 
+nav p {
+  color: black;
+  text-decoration: none;
+  text-align: start;
+}
+
 /* pseudo that adds a hover element */
 nav a:hover {
   background-color: violet;
@@ -59,7 +74,21 @@ nav a:hover {
   
 }
 
-.subject {
+/* trying to add linkedin box next to the about me section and add a link to the image */
+.about {
+  font-size: 1.5rem;
+  border-style: solid;
+  text-align: start;
+  background-color: rgb(255, 255, 255);
+  border-width: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 0 0 300px;
+  margin: 1px;
+  
+}
+
+.about a {
   font-size: 1.5rem;
   border-style: solid;
   text-align: start;
@@ -69,6 +98,18 @@ nav a:hover {
   padding: 10px;
   flex: 0 0 300px;
   margin: 20px;
+  
+}
+
+.about img {
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  border-width: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
 }
 
 main {
@@ -76,20 +117,31 @@ main {
   flex-wrap: wrap;
 }
 
+img {
+  display: flex;
+  float:left;
+}
+
 footer {
   width: 100%;
   bottom: 0;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: #13293d;
   color: #fff;
   margin-top: auto;
+  align-items: flex-start;
+}
+
+.first-repo {
+  display: none;
+
 }
 
 .field {
   flex: 1;
   background-color: rgb(173, 137, 251);
-  padding: 50px;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -104,7 +156,7 @@ footer {
   padding: 30px;
   flex: 0 0 300px;
   transform: scale(1.2);
-  margin: 75px;
+  margin: 50px;
 }
 
 .skills > header {
@@ -117,6 +169,9 @@ footer {
   text-align: center;
 }
 
+.skills img {
+  width: 100%;
+}
 .skills > img {
   width: 100%;
 }
@@ -126,4 +181,7 @@ footer {
   nav {
     flex-direction: column;
   }
+.wrapper img {
+  width: 100%;
+}
 }
