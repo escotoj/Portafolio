@@ -8,4 +8,4 @@ Added a couple of classes and used box stylings to add sections to the page.
 Linked an image to a website
 Designed the layout by including a picture of myself, my full name, and about me and contact section as well as example work. 
 
-
+![This is an image](images/Screenshot-HW2.png)
